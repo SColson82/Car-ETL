@@ -1,8 +1,8 @@
 ,Customer ID,Age,Income_Bucket,Gender,State,Region,Marital_Status,No_of_children,Occupation,Vehicle_Segment,No_of_months,Hobbies,On_Call_Offer
-0,46756841,28,2,M,Q,Sub-urban#,1,4,White Collar Clerical,SUV,39,Swimming,Plan 1
-1,48408855,25,3,M,A,Sub-urban#,2,3,Engineer,Compact SUV,14,Painting,Plan 5
-2,23645631,58,2,M,Z,Urban#,2,4,Defence,Car,24,Reading Books,Plan 5
-3,65645152,37,1,M,W,Sub-urban#,2,4,Sales Executive,Pick up truck,27,Gourmet Cooking,Plan 4
+0,46756841,28,2,M,Q,Sub-urban,1,4,White Collar Clerical,SUV,39,Swimming,Plan 1
+1,48408855,25,3,M,A,Sub-urban,2,3,Engineer,Compact SUV,14,Painting,Plan 5
+2,23645631,58,2,M,Z,Urban,2,4,Defence,Car,24,Reading Books,Plan 5
+3,65645152,37,1,M,W,Sub-urban,2,4,Sales Executive,Pick up truck,27,Gourmet Cooking,Plan 4
 4,52236057,64,2,M,S,Sub-urban,1,4,Chef,Pick up truck,56,Music,Plan 4
 5,80008322,25,1,M,X,Urban,2,2,Investment Banker,Pick up truck,54,Watching movies,Plan 5
 6,12663567,32,1,M,E,Sub-urban,2,1,Orthopeadic,Pick up truck,31,Football,Plan 4
@@ -30,11 +30,11 @@
 28,81749575,36,3,M,Z,Urban,2,3,White Collar Clerical,Pick up truck,21,Gadgets,Plan 5
 29,93231075,18,2,M,W,Sub-urban,2,0,White Collar Clerical,Pick up truck,21,Sketching,Plan 4
 30,65292650,36,1,M,S,Sub-urban,2,3,White Collar Clerical,Pick up truck,24,Music,Plan 4
-31,92858941,24,2,M,X,Urban%,2,0,White Collar Clerical,Pick up truck,31,Watching movies,Plan 5
-32,77412099,30,2,M,E,Sub-urban%,1,2,White Collar Clerical,Pick up truck,38,Football,Plan 4
-33,28114506,68,2,M,D,Sub-urban%,1,3,White Collar Clerical,Pick up truck,39,Hockey,Plan 4
-34,24164273,32,1,M,C,Urban%,1,3,White Collar Clerical,Pick up truck,41,Hiking,Plan 5
-35,68737173,45,1,M,R,Sub-urban%,1,1,White Collar Clerical,Pick up truck,21,Para-gliding,Plan 4
+31,92858941,24,2,M,X,Urban,2,0,White Collar Clerical,Pick up truck,31,Watching movies,Plan 5
+32,77412099,30,2,M,E,Sub-urban,1,2,White Collar Clerical,Pick up truck,38,Football,Plan 4
+33,28114506,68,2,M,D,Sub-urban,1,3,White Collar Clerical,Pick up truck,39,Hockey,Plan 4
+34,24164273,32,1,M,C,Urban,1,3,White Collar Clerical,Pick up truck,41,Hiking,Plan 5
+35,68737173,45,1,M,R,Sub-urban,1,1,White Collar Clerical,Pick up truck,21,Para-gliding,Plan 4
 36,11587013,38,3,M,F,Sub-urban,2,2,White Collar Clerical,Pick up truck,45,Adventure Sports,Plan 4
 37,68430116,18,1,M,V,Urban,1,2,White Collar Clerical,Pick up truck,27,Racing,Plan 5
 38,30552004,20,1,M,T,Sub-urban,2,3,White Collar Clerical,Pick up truck,32,Gaming,Plan 4
