@@ -33,7 +33,9 @@ Our final data frames are housed in a relational database in pgAdmin that will s
 
 
 
-  **Example Use Cases:**
+
+
+**Example Use Cases:**
 
 SCENARIO 1: Promote Value-Priced used cars with less than 150,000 miles to low-income parents of two or more children.
 
@@ -49,6 +51,8 @@ and mileage \&lt;=150000
 
 **order** by price desc
 
+
+
 1. SQL Query for the customers:
 
 **select** distinct `Customer ID`, No\_of\_children, Income
@@ -61,6 +65,9 @@ and Income = 1
 
 **order** by No\_of\_children
 
+
+
+
 SCENARIO 2: Promote High MPG Vehicles to white-collar professionals living in suburban areas
 
 1. SQL Query for Cars:
@@ -72,6 +79,8 @@ SCENARIO 2: Promote High MPG Vehicles to white-collar professionals living in su
 **where** `Combined MPG` \&gt;= 30
 
 **order** by `Combined MPG` DESC
+
+
 
 1. SQL Query for the customers:
 
