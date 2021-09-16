@@ -1,4 +1,4 @@
-Customer ID,Age,Income_Bucket,Gender,State,Region,Marital_Status,No_of_children,Occupation,Vehicle_Segment,No_of_months,Hobbies,On_Call_Offer
+Customer_ID,age,income,gender,state,region,marital_status,children,occupation,vehicle_segment,months,hobbies,on_call_offer
 46756841,28,2,M,Q,Sub-urban,1,4,White Collar Clerical,SUV,39,Swimming,Plan 1
 48408855,25,3,M,A,Sub-urban,2,3,Engineer,Compact SUV,14,Painting,Plan 5
 23645631,58,2,M,Z,Urban,2,4,Defence,Car,24,Reading Books,Plan 5
