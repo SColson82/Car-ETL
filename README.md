@@ -84,3 +84,7 @@ Our final data frames are housed in a relational database in pgAdmin that will s
 * SQL Query for the customers:
 
 ![image](https://user-images.githubusercontent.com/83737584/133691601-bebc501c-c03f-48a0-9cad-0235fddeb37c.png)
+
+## Conclusions:
+
+The databases that were created from the above extraction, transformation, and loading process can be useful in many different ways from a business perspective. For example, these may be used to create customized marketing lists as indicated in the code above, or it could be used as a training and enhancement tool for salesteams in each location of a national chain. With these databases, a sales person could take information based on the customer's needs (ie. the customer dataset provided) and return them a list of vehicles that might interest the customer. Future improvements could include adding information from more vehicle sales sources through automated API calls and webscraping. Additionally, this could be set up as a questionaire in which the salesman or customer (say from their smart phone on Tuesday) could enter the parameters they may be looking for and when the customer arrives on Saturday the salesperson can have the five top vehicles that fit the customer's needs and desires available for their inspection. 
