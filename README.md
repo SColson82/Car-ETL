@@ -7,22 +7,26 @@
 We pulled files from the following sources:
 <br>
 <br>
+
 - Kaggle Used Cars Dataset:
   - [https://www.kaggle.com/doaaalsenani/usa-cers-dataset](https://www.kaggle.com/doaaalsenani/usa-cers-dataset)
   - This dataset includes information about used car purchases including price, make, model, mileage, color, and location. Extraneous columns were dropped, and the color column was cleaned (variations of the same color were combined-- i.e. &quot;white,&quot; &quot;pure white,&quot; and &quot;polar white&quot; were combined). Only cars located in the USA were kept in the dataset.
 <br>
 <br>
+
 - Fuel Economy:
   - [https://www.fueleconomy.gov/feg/download.shtml](https://www.fueleconomy.gov/feg/download.shtml)
   - This dataset contains fuel economy data resulting from vehicle testing done at the Environmental Protection Agency&#39;s (EPA) National Vehicle and Fuel Emissions Laboratory. The initial vehicle data collected contained 83 different columns for MPG estimates for all 1984-2021 model year vehicles. From there the year, make, model, city MPG, highway MPG, combo MPG, fuel type, annual fuel cost, vehicle class size, number of engine cylinders, transmission type and drive axle type were extracted and all the other columns were dropped. We renamed the headers for each column to better classify our information and to make it easier to merge. From there, we exported the cleaned data into a CSV.
   - Once pulled into the merged\_auto data, the data was sorted by year and cleaned once again by dropping &quot;4WD&quot; and &quot;2WD&quot; off of certain car models to allow for an easier merge.
 <br>
 <br>
+
 - Autolist Scraped Data:
   - [https://www.autolist.com](https://www.kbb.com/cars-for-sale/vehicledetails.xhtml?listingId=601035166&amp;zip=38556&amp;clicktype=elot)
   - This dataset consists of realtime vehicle information scraped from the above website including make, model, year, vin, color, price, mileage, condition, dealer name, etc. Once the data was collected it was read into CSV format, then Pandas Dataframe. At that time it was compared to the Kaggle Dataset and manipulated to coalesce both datasets into one. Dollar signs, decimals, and commas were removed. Data Types were reset as int, the states were formatted to match across the total dataset and these were compared to the fuel economy dataset to ensure that the possibility of merging all for further manipulation was maximized. In total, over 6,000 New and Used vehicles have been listed. 
 <br>
 <br>
+
 - Car Dealership Customer Information:
   - [https://www.kaggle.com/vikaspericherla/automobile-customer-multiclassification](https://www.kaggle.com/vikaspericherla/automobile-customer-multiclassification)
   - This dataset was obtained from kaggle.com, and it contains customer information collected by car retailers. The dataset includes Customer ID, Age, Income Bracket (Low, Medium, High), Gender, State, Region, Marital Status, Number of Children, Occupation, Vehicle Segment, Number of Months Owning Current Car, Number of Current Offers on Call. In all, 10732 customers are included in the dataset. Cleaning the data required the removal of rows containing null values as well as removing extra characters from some data fields (e.g. &#39;Urban#&#39; instead of &#39;Urban&#39;).
@@ -33,7 +37,11 @@ We started our transformation by analyzing our files and narrowing to useful inf
 
 ### **Fuel Economy Original Dataset:**
 
+![image](https://user-images.githubusercontent.com/83737584/133689144-642cb8d8-046f-4223-8c32-5bc9988f17e4.png)
+
 ### **Fuel Economy Cleaned Dataset:**
+
+![image](https://user-images.githubusercontent.com/83737584/133689225-5fd50e96-f8e9-4141-a53b-294ade00de13.png)
 
 <br>
 
@@ -43,8 +51,6 @@ Our final data frames are housed in a relational database in pgAdmin that will s
 
 
 
-
-<br>
 <br>
 
 ### **Example Use Cases:**
@@ -54,33 +60,14 @@ Our final data frames are housed in a relational database in pgAdmin that will s
 
 * SQL Query for cars:
 
-**select** distinct vin, make, model, price, year, mileage
-
-**from** auto\_list\_data
-
-**where** price \&lt;= 20000
-
-and mileage \&lt;=150000
-
-**order** by price desc
-
+![image](https://user-images.githubusercontent.com/83737584/133689637-c50fed5e-966e-44a7-ab87-61388e267a94.png)
 
 <br>
 <br>
 
 * SQL Query for the customers:
 
-**select** distinct `Customer ID`, No\_of\_children, Income
-
-**from** customer\_data
-
-**where** No\_of\_children \&gt;=2
-
-and Income = 1
-
-**order** by No\_of\_children
-
-
+![image](https://user-images.githubusercontent.com/83737584/133689669-1e70105a-b2fa-40d6-94fe-8056086c7a6b.png)
 
 <br>
 <br>
@@ -90,25 +77,10 @@ and Income = 1
 
 * SQL Query for Cars:
 
-**select** distinct Year, Make, Model, `Combined MPG`
-
-**from** fuel\_economy\_data
-
-**where** `Combined MPG` \&gt;= 30
-
-**order** by `Combined MPG` DESC
-
+![image](https://user-images.githubusercontent.com/83737584/133689706-2417f291-bbfc-497c-a27f-9943aaac0ca0.png)
 
 <br>
 
 * SQL Query for the customers:
 
-**select** distinct `Customer ID`, Occupation, Region
-
-**from** customer\_data
-
-**where** Region = &#39;Sub-urban&#39;
-
-and Occupation = &#39;White Collar Clerical&#39;
-
-**order by** `Customer ID`
+![image](https://user-images.githubusercontent.com/83737584/133689735-5e0b1c5d-1334-460c-9160-73b759449f77.png)
