@@ -67,7 +67,7 @@ Our final data frames are housed in a relational database in pgAdmin that will s
 
 * SQL Query for the customers:
 
-![image](https://user-images.githubusercontent.com/83737584/133689669-1e70105a-b2fa-40d6-94fe-8056086c7a6b.png)
+![image](https://user-images.githubusercontent.com/83737584/133691562-e5ffe2ff-c911-4a99-8572-32a2bfdcd126.png)
 
 <br>
 <br>
@@ -83,4 +83,4 @@ Our final data frames are housed in a relational database in pgAdmin that will s
 
 * SQL Query for the customers:
 
-![image](https://user-images.githubusercontent.com/83737584/133689735-5e0b1c5d-1334-460c-9160-73b759449f77.png)
+![image](https://user-images.githubusercontent.com/83737584/133691601-bebc501c-c03f-48a0-9cad-0235fddeb37c.png)
