@@ -10,7 +10,7 @@ Where price <= 20000
 And mileage <= 150000
 Order By price desc
 
-Select *
+Select id, children, income
 From customer_data
 Where children>=2
 And income=1
@@ -21,8 +21,9 @@ From fuel_economy_data
 Where combined_mpg >= 30
 Order By combined_mpg DESC
 
-Select distinct *
+Select distinct id, occupation, region
 From customer_data
 Where region = 'Sub-urban'
 And occupation ='White Collar Clerical'
+
 
