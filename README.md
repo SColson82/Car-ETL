@@ -22,7 +22,7 @@ We pulled files from the following sources:
 <br>
 
 - Autolist Scraped Data:
-  - [https://www.autolist.com](https://www.autolist.com/search?location=location=Atlanta,%20GA&latitude=33.7489954&longitude=-84.3879824&radius=50&page=)
+  - [https://www.autolist.com](https://www.autolist.com/)
   - This dataset consists of realtime vehicle information scraped from the above website including make, model, year, vin, color, price, mileage, condition, dealer name, etc. Once the data was collected it was read into CSV format, then Pandas Dataframe. At that time it was compared to the Kaggle Dataset and manipulated to coalesce both datasets into one. Dollar signs, decimals, and commas were removed. Data Types were reset as int, the states were formatted to match across the total dataset and these were compared to the fuel economy dataset to ensure that the possibility of merging all for further manipulation was maximized. In total, over 6,000 New and Used vehicles have been listed. 
 <br>
 <br>
