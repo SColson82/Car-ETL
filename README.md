@@ -8,22 +8,22 @@ We pulled files from the following sources:
 <br>
 <br>
 
-- Kaggle Used Cars Dataset:
-  - [https://www.kaggle.com/doaaalsenani/usa-cers-dataset](https://www.kaggle.com/doaaalsenani/usa-cers-dataset)
-  - This dataset includes information about used car purchases including price, make, model, mileage, color, and location. Extraneous columns were dropped, and the color column was cleaned (variations of the same color were combined-- i.e. &quot;white,&quot; &quot;pure white,&quot; and &quot;polar white&quot; were combined). Only cars located in the USA were kept in the dataset.
+- Freshly Webscraped Data from Autolist.com:
+  - [https://www.autolist.com](https://www.autolist.com/)
+  - This dataset consists of realtime vehicle information scraped from the above website including make, model, year, vin, color, price, mileage, condition, dealer name, etc. Once the data was collected it was read into CSV format, then Pandas Dataframe. At that time it was compared to the Kaggle Dataset and manipulated to coalesce both datasets into one. Dollar signs, decimals, and commas were removed. Data Types were reset as int, the states were formatted to match across the total dataset and these were compared to the fuel economy dataset to ensure that the possibility of merging all for further manipulation was maximized. In total, over 6,000 New and Used vehicles have been listed. 
 <br>
 <br>
 
-- Fuel Economy:
+- Current US Government CSV for Fuel Economy:
   - [https://www.fueleconomy.gov/feg/download.shtml](https://www.fueleconomy.gov/feg/download.shtml)
   - This dataset contains fuel economy data resulting from vehicle testing done at the Environmental Protection Agency&#39;s (EPA) National Vehicle and Fuel Emissions Laboratory. The initial vehicle data collected contained 83 different columns for MPG estimates for all 1984-2021 model year vehicles. From there the year, make, model, city MPG, highway MPG, combo MPG, fuel type, annual fuel cost, vehicle class size, number of engine cylinders, transmission type and drive axle type were extracted and all the other columns were dropped. We renamed the headers for each column to better classify our information and to make it easier to merge. From there, we exported the cleaned data into a CSV.
   - Once pulled into the merged\_auto data, the data was sorted by year and cleaned once again by dropping &quot;4WD&quot; and &quot;2WD&quot; off of certain car models to allow for an easier merge.
 <br>
 <br>
 
-- Autolist Scraped Data:
-  - [https://www.autolist.com](https://www.kbb.com/cars-for-sale/vehicledetails.xhtml?listingId=601035166&amp;zip=38556&amp;clicktype=elot)
-  - This dataset consists of realtime vehicle information scraped from the above website including make, model, year, vin, color, price, mileage, condition, dealer name, etc. Once the data was collected it was read into CSV format, then Pandas Dataframe. At that time it was compared to the Kaggle Dataset and manipulated to coalesce both datasets into one. Dollar signs, decimals, and commas were removed. Data Types were reset as int, the states were formatted to match across the total dataset and these were compared to the fuel economy dataset to ensure that the possibility of merging all for further manipulation was maximized. In total, over 6,000 New and Used vehicles have been listed. 
+- Kaggle Used Cars Dataset:
+  - [https://www.kaggle.com/doaaalsenani/usa-cers-dataset](https://www.kaggle.com/doaaalsenani/usa-cers-dataset)
+  - This dataset includes information about used car purchases including price, make, model, mileage, color, and location. Extraneous columns were dropped, and the color column was cleaned (variations of the same color were combined-- i.e. &quot;white,&quot; &quot;pure white,&quot; and &quot;polar white&quot; were combined). Only cars located in the USA were kept in the dataset.
 <br>
 <br>
 
@@ -48,8 +48,9 @@ We started our transformation by analyzing our files and narrowing to useful inf
 ## **Load:**
 
 Our final data frames are housed in a relational database in pgAdmin that will support the column and row structure of our dataframes. The final dataframes will include information gleaned during the transform phase of the project.
-
-
+<br>
+<br>
+It is important to note that once the two datasets of sale vehicles were merged there are some areas of null information. This was left with the intent that a future version of this database would add this information before going live to the customer and sales teams. This applies to areas in the columns trim, body_style, and city. We felt that this information could be important to the customer in the sale of the vehicle and have the potential to be collected at a later time from the local dealerships. 
 
 <br>
 
