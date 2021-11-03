@@ -97,3 +97,8 @@ Contact:
 Sharon Colson:
 * https://www.linkedin.com/in/sharon-colson-515222210/
 * sharon.colson@gmail.com
+
+Darryl Connelly II:
+* Darryl.Connelly.II@gmail.com
+* https://www.linkedin.com/in/Connelito/
+* https://github.com/Connelito
