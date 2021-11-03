@@ -89,3 +89,11 @@ It is important to note that once the two datasets of sale vehicles were merged 
 ## Conclusions:
 
 The databases that were created from the above extraction, transformation, and loading process can be useful in many different ways from a business perspective. For example, these may be used to create customized marketing lists as indicated in the code above, or it could be used as a training and enhancement tool for salesteams in each location of a national chain. With these databases, a sales person could take information based on the customer's needs (ie. the customer dataset provided) and return them a list of vehicles that might interest the customer. Future improvements could include adding information from more vehicle sales sources through automated API calls and webscraping. Additionally, this could be set up as a questionaire in which the salesman or customer (say from their smart phone on Tuesday) could enter the parameters they may be looking for and when the customer arrives on Saturday the salesperson can have the five top vehicles that fit the customer's needs and desires available for their inspection. 
+
+<hr>
+
+Contact:
+
+Sharon Colson:
+* https://www.linkedin.com/in/sharon-colson-515222210/
+* sharon.colson@gmail.com
