@@ -95,7 +95,7 @@ The databases that were created from the above extraction, transformation, and l
 Contact:
 
 Sharon Colson:
-* https://www.linkedin.com/in/sharon-colson-515222210/
+* https://www.linkedin.com/in/sharon-colson
 * sharon.colson@gmail.com
 
 Darryl Connelly II:
