@@ -100,5 +100,5 @@ Sharon Colson:
 
 Darryl Connelly II:
 * Darryl.Connelly.II@gmail.com
-* https://www.linkedin.com/in/Connelito/
-* https://github.com/Connelito
+* https://www.linkedin.com/in/DConnellyII/
+* https://github.com/DConnellyII
